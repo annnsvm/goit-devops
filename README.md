@@ -109,7 +109,6 @@ kubectl port-forward jenkins-0 8080:8080 -n jenkins
 * Navigate to jenkins http://localhost:8080/ and use credentials in config
 * run `seed-job` using `Build Now` button and approve script if required (Manage Jenkins)
 * run `goit-django-docker` using `Build Now` button and approve script if required (Manage Jenkins)
-![Jenkins](./docs/jenkins.png)
 
 ### Argo CD
 Get ArgoCD UI on 8443 port
@@ -125,7 +124,6 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 ### Argo-CD UI
 * Navigate to Argo-CD http://localhost:8443/ and use credentials
 * Create application
-![Argo](./docs/argo.png)
 
 ### Grafana
 Get grafana UI on 3000 port
