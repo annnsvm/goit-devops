@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: django-service
 spec:
-  type: {{ .Values.service.type }}
+  type: { { .Values.service.type } }
   selector:
     app: django-app
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: {{ .Values.service.targetPort }}
+    - port: { { .Values.service.port } }
+      targetPort: 8000
